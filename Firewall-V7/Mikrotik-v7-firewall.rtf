@@ -1,4 +1,3 @@
-/ip firewall/filter/
 # Accept established, related, and untracked connections
 /ip firewall filter add chain=input connection-state=established,related,untracked action=accept comment="Allow established/related/untracked"
 /ip firewall filter add chain=forward connection-state=established,related,untracked action=accept comment="Forward established/related/untracked"
